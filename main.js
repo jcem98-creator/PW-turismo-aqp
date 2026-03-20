@@ -27,12 +27,12 @@ setInterval(() => {
     temp.innerText = (currentTemp + change) + '°C';
 }, 10000);
 
-// Scroll Background Change
+// Scroll Effect
 window.onscroll = () => {
     const nav = document.querySelector('.main-nav');
     if (window.scrollY > 50) {
-        nav.style.background = 'rgba(26, 43, 60, 0.9)';
+        nav.classList.add('scrolled');
     } else {
-        nav.style.background = 'transparent';
+        nav.classList.remove('scrolled');
     }
 };

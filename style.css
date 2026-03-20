@@ -18,6 +18,7 @@ body {
     color: var(--text-main);
     background-color: var(--white-sillar);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Smart Bar */
@@ -53,7 +54,14 @@ body {
     align-items: center;
     padding: 0 50px;
     z-index: 1000;
-    transition: background 0.3s;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-nav.scrolled {
+    background: rgba(26, 43, 60, 0.85);
+    backdrop-filter: blur(15px);
+    height: 70px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .logo {
@@ -80,16 +88,39 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background: white;
-    color: black;
-    padding: 10px;
-    min-width: 150px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    left: -20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 15px 0;
+    min-width: 200px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    list-style: none;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 12px 25px;
+    margin: 0 !important;
+    transition: background 0.3s;
+    font-size: 0.95rem;
+}
+
+.dropdown li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--gold);
 }
 
 .has-dropdown:hover .dropdown {
     display: block;
+    animation: fadeInDown 0.3s ease;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .btn-passport {
@@ -111,7 +142,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1590059231ef6-b25867373f1d?q=80&w=2670&auto=format&fit=crop') no-repeat center center/cover;
+    background: url('hero-bg.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

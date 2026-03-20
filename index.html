@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arequipa Smart Portal | Ciudad Blanca</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Smart Utility Bar -->
+    <header class="smart-bar">
+        <div class="utility-left">
+            <span id="weather-icon">☁️</span>
+            <span id="temp">24°C</span>
+            <span class="city-name">Arequipa, PE</span>
+        </div>
+        <div class="utility-right">
+            <div class="lang-selector">
+                <span class="active">ES</span> | <span>EN</span>
+            </div>
+            <div class="search-icon">🔍</div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="logo">Arequipa</div>
+        <ul class="nav-links">
+            <li class="has-dropdown">Qué hacer
+                <ul class="dropdown">
+                    <li>Esta semana</li>
+                    <li>Tours Colca</li>
+                    <li>Ruta del Sillar</li>
+                    <li>Picanterías</li>
+                </ul>
+            </li>
+            <li>Antes de llegar</li>
+            <li>Información</li>
+        </ul>
+        <button id="open-passport" class="btn-passport">Arequipa Passport</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Descubre la Ciudad Blanca,<br>Corazón de los Andes</h1>
+            <p>Donde la historia y los volcanes se encuentran</p>
+            <button class="btn-primary">Planifica tu Viaje</button>
+        </div>
+    </section>
+
+    <!-- Passport Modal -->
+    <div id="passport-modal" class="modal">
+        <div class="passport-card">
+            <span class="close-modal">&times;</span>
+            <div class="passport-header">
+                <div class="crest">👑</div>
+                <h2>AREQUIPA PASSPORT</h2>
+                <div class="status">Status: <span class="vip-tag">VIP</span></div>
+            </div>
+            <div class="passport-body">
+                <h3>MY DIGITAL JOURNEY</h3>
+                <div class="stamps">
+                    <div class="stamp visited">
+                        <div class="stamp-icon">🏛️</div>
+                        <span>Santa Catalina</span>
+                    </div>
+                    <div class="stamp locked">
+                        <div class="stamp-icon">🦅</div>
+                        <span>Colca Canyon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="passport-footer">
+                <p>Capturando datos para tu próxima aventura</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

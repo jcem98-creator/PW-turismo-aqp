@@ -84,6 +84,16 @@ body {
     position: relative;
 }
 
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
 .dropdown {
     display: none;
     position: absolute;

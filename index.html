@@ -27,16 +27,11 @@
     <nav class="main-nav">
         <div class="logo">Arequipa</div>
         <ul class="nav-links">
-            <li class="has-dropdown">Qué hacer
-                <ul class="dropdown">
-                    <li>Esta semana</li>
-                    <li>Tours Colca</li>
-                    <li>Ruta del Sillar</li>
-                    <li>Picanterías</li>
-                </ul>
-            </li>
-            <li>Antes de llegar</li>
-            <li>Información</li>
+            <li><a href="#experiences">Qué hacer</a></li>
+            <li><a href="#antes-de-llegar">Antes de llegar</a></li>
+            <li><a href="#informacion">Información</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#agencias">Agencias de Turismo</a></li>
         </ul>
         <button id="open-passport" class="btn-passport">Arequipa Passport</button>
     </nav>
@@ -51,31 +46,53 @@
         </div>
     </section>
 
-    <!-- Experiences Section (Placeholder for Scroll) -->
-    <section id="experiences" class="experiences" style="padding: 100px 50px; background: white; text-align: center;">
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px;">Experiencias que te esperan</h2>
+    <!-- Sections for Scroll Navigation -->
+    <section id="que-hacer" class="page-section" style="padding: 100px 50px; background: white;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px;">Qué hacer</h2>
         <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <div class="card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: white;">
-                <div style="height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🍛</div>
-                <div style="padding: 20px;">
-                    <h3>Gastronomía Picantera</h3>
-                    <p>Sabores ancestrales en el corazón de la ciudad.</p>
-                </div>
+            <div class="card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: white; padding: 20px; text-align: center;">
+                <div style="font-size: 3rem;">🍛</div>
+                <h3>Picanterías Tradicionales</h3>
+                <p>Prueba el auténtico Rocoto Relleno y la Chicha de Jora.</p>
             </div>
-            <div class="card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: white;">
-                <div style="height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🌋</div>
-                <div style="padding: 20px;">
-                    <h3>Ruta de los Volcanes</h3>
-                    <p>Aventuras épicas bajo la sombra del Misti.</p>
-                </div>
+            <div class="card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: white; padding: 20px; text-align: center;">
+                <div style="font-size: 3rem;">🏔️</div>
+                <h3>Mirador de Yanahuara</h3>
+                <p>Las mejores vistas del volcán Misti bajo los arcos de sillar.</p>
             </div>
-            <div class="card" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: white;">
-                <div style="height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🕯️</div>
-                <div style="padding: 20px;">
-                    <h3>Monasterio de Santa Catalina</h3>
-                    <p>Un laberinto de sillar y fe.</p>
-                </div>
-            </div>
+        </div>
+    </section>
+
+    <section id="antes-de-llegar" class="page-section" style="padding: 100px 50px; background: #f9f9f9;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px;">Antes de llegar</h2>
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+            <p>Arequipa se encuentra a 2,335 msnm. Te recomendamos hidratarte bien y descansar las primeras horas para evitar el soroche.</p>
+            <ul style="margin-top: 20px; list-style: none;">
+                <li>📅 <strong>Mejor época</strong>: Abril a Noviembre (Temporada seca).</li>
+                <li>🌡️ <strong>Clima</strong>: Soleado casi todo el año.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="informacion" class="page-section" style="padding: 100px 50px; background: white;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px;">Información Útil</h2>
+        <div style="text-align: center;">
+            <p>Todo lo que necesitas saber sobre moneda, transporte y seguridad en la Ciudad Blanca.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="page-section" style="padding: 100px 50px; background: var(--volcanic-blue); color: white;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px;">Contacto</h2>
+        <div style="text-align: center;">
+            <p>¿Tienes dudas? Escríbenos y te ayudamos a planificar tu estancia VIP.</p>
+            <button class="btn-primary" style="margin-top: 20px;">Enviar Mensaje</button>
+        </div>
+    </section>
+
+    <section id="agencias" class="page-section" style="padding: 100px 50px; background: white;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px;">Agencias de Turismo</h2>
+        <div style="text-align: center;">
+            <p>Operadores certificados para garantizar tu seguridad y confort.</p>
         </div>
     </section>
 

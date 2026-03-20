@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arequipa Classic | Turismo Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Header -->
+    <header class="main-nav-container">
+        <div class="top-accent-bar"></div>
+        <nav class="main-nav">
+            <div class="nav-left">
+                <div class="logo">Turismo | Arequipa<span class="logo-dot">.</span></div>
+                <div class="mobile-toggle" id="mobile-menu-btn">☰</div>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#que-hacer">Qué hacer</a></li>
+                    <li><a href="#antes-de-llegar">Antes de llegar</a></li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#agencias">Profesionales</a></li>
+                </ul>
+            </div>
+            <div class="nav-right desktop-only">
+                <div class="utility-items">
+                    <div class="weather-box">
+                        <span id="weather-icon">☀️</span>
+                        <span id="temp">24,7°</span>
+                    </div>
+                </div>
+                <button id="open-passport" class="btn-passport">Arequipa Passport</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Classic Hero Section (Static Photo) -->
+    <section class="hero static-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Descubre la Ciudad Blanca,<br>Corazón de los Andes</h1>
+            <p>Donde la historia y los volcanes se encuentran</p>
+            <button class="btn-primary">Planifica tu Viaje</button>
+        </div>
+    </section>
+
+    <!-- Sections for Scroll Navigation -->
+    <section id="que-hacer" class="page-section">
+        <h2 class="section-title">Qué hacer</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🍛</div>
+                <h3>Picanterías Tradicionales</h3>
+                <p>Prueba el auténtico Rocoto Relleno y la Chicha de Jora.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏔️</div>
+                <h3>Mirador de Yanahuara</h3>
+                <p>Las mejores vistas del volcán Misti bajo los arcos de sillar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="antes-de-llegar" class="page-section bg-light">
+        <h2 class="section-title">Antes de llegar</h2>
+        <div class="content-box">
+            <p>Arequipa se encuentra a 2,335 msnm. Te recomendamos hidratarte bien y descansar las primeras horas para evitar el soroche.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="page-section bg-dark">
+        <h2 class="section-title white">Contacto</h2>
+        <div class="content-box">
+            <p>¿Tienes dudas? Escríbenos y te ayudamos a planificar tu estancia VIP.</p>
+            <button class="btn-primary" style="margin-top: 20px;">Enviar Mensaje</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

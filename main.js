@@ -41,22 +41,7 @@ if (temp) {
     }, 10000);
 }
 
-// Nano Banana Style: Scroll-Driven Video
-const video = document.getElementById('scroll-video');
-const hero = document.getElementById('hero-trigger');
-
-function updateVideoFrame() {
-    if (!video || !hero) return;
-    const scrollPos = window.scrollY;
-    const scrollHeight = hero.offsetHeight;
-    const progress = Math.min(scrollPos / scrollHeight, 1);
-    
-    if (video.duration) {
-        video.currentTime = progress * video.duration;
-    }
-}
-
-// Scroll Effect (Header + Video)
+// Scroll Effect (Header)
 window.onscroll = () => {
     const navBar = document.querySelector('.main-nav');
     if (navBar) {
@@ -66,10 +51,4 @@ window.onscroll = () => {
             navBar.style.height = '90px';
         }
     }
-    
-    if (video) requestAnimationFrame(updateVideoFrame);
 };
-
-if (video) {
-    video.addEventListener('loadedmetadata', updateVideoFrame);
-}

@@ -29,10 +29,10 @@ setInterval(() => {
 
 // Scroll Effect
 window.onscroll = () => {
-    const nav = document.querySelector('.main-nav');
+    const navBar = document.querySelector('.main-nav');
     if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
+        navBar.style.height = '70px';
     } else {
-        nav.classList.remove('scrolled');
+        navBar.style.height = '90px';
     }
 };

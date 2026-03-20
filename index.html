@@ -8,33 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Smart Utility Bar -->
-    <header class="smart-bar">
-        <div class="utility-left">
-            <span id="weather-icon">☁️</span>
-            <span id="temp">24°C</span>
-            <span class="city-name">Arequipa, PE</span>
-        </div>
-        <div class="utility-right">
-            <div class="lang-selector">
-                <span class="active">ES</span> | <span>EN</span>
+    <!-- Premium Stacked Header (Buenos Aires Style) -->
+    <header class="main-nav-container">
+        <div class="top-accent-bar"></div>
+        <nav class="main-nav">
+            <div class="nav-left">
+                <div class="logo">Arequipa<span class="logo-dot">.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#que-hacer">Qué hacer</a></li>
+                    <li><a href="#antes-de-llegar">Antes de llegar</a></li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#agencias">Profesionales</a></li>
+                </ul>
             </div>
-            <div class="search-icon">🔍</div>
-        </div>
+            <div class="nav-right">
+                <div class="utility-items">
+                    <div class="weather-box">
+                        <span id="weather-icon">☀️</span>
+                        <span id="temp">24,7°</span>
+                    </div>
+                    <div class="lang-selector">
+                        🌐 <span>Español</span> ▾
+                    </div>
+                    <div class="search-icon">🔍</div>
+                </div>
+                <button id="open-passport" class="btn-passport">Arequipa Passport</button>
+            </div>
+        </nav>
     </header>
-
-    <!-- Main Navigation -->
-    <nav class="main-nav">
-        <div class="logo">Arequipa</div>
-        <ul class="nav-links">
-            <li><a href="#experiences">Qué hacer</a></li>
-            <li><a href="#antes-de-llegar">Antes de llegar</a></li>
-            <li><a href="#informacion">Información</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#agencias">Agencias de Turismo</a></li>
-        </ul>
-        <button id="open-passport" class="btn-passport">Arequipa Passport</button>
-    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
